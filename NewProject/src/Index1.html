@@ -7,13 +7,15 @@
     <meta name="robots" content="all">
     <meta property="og:title" content="Это моя первая страница...">
     <title>Андрей Стасюк - веб разработчик</title>
+     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div if (Condition) 
-                 class="logo">Андрей Стасюк
+            <div class="logo">
+                Андрей Стасюк
                  </div>
             <div class="menu">
                 <ul>
@@ -34,56 +36,76 @@
         <input type="submit" value="Обо мне">
         <input type="submit" value="Мои работы">
 
-        </div></div>
+        </div>
+        </div>
 
 <div class="Inf">
+    <div class="Inf_container">
     <h2> Обо мне</h2>
+    <hr>
     <img src="image/%D1%84%D0%BE%D1%82%D0%BA%D0%B0.png" alt="Фото не загрузилось =(">
     <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsa esse dolorum consequatur at earum laudantium distinctio. Totam minima, cumque. </h4>
     <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsa esse dolorum consequatur at earum laudantium distinctio. Totam minima, cumque. </h4>
-    <input type="submit" value="Скачать резюме">
+        </div>
+        <div class="rez">
+    <input type="submit" value="Скачать резюме">            
+        </div>
 </div>
-   
+   <div class="Fon">
+   <br>
    <div class="skills">
        <h2>Что я умею</h2>
-       <div class="skills_item">
-          <img src="..." alt=".">
+       <hr>
+       
+         <div class="skills_item">
+          <img src="image/noyt.png" alt=".">
            <h3>Веб-дизаин</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consequatur.</p>   
        </div>
        <div class="skills_item">
-          <img src="..." alt=".">
+          <img src="image/sleh.png" alt=".">
            <h3>Разработка</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consequatur.</p>   
        </div>
        <div class="skills_item">
-          <img src="..." alt=".">
+          <img src="image/raketa.png" alt=".">
            <h3>СЕО-оптимизация</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consequatur.</p>   
        </div>
        <div class="skills_item">
-          <img src="..." alt=".">
+          <img src="image/grom.png" alt=".">
            <h3>Маркетинг</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consequatur.</p>   
        </div>
-       
+    </div>
    </div>
    <div class="case">
        <h2>Кейсы</h2>
+       <hr>
        <div class="proect">
-           <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nisi impedit voluptatum ipsum quae, nulla earum atque tempora corporis numquam.</h4>
-           <img src="" alt="Произошла непредвиденная ошибка =(">
-        <br><big>CLIENT:</big>
-        <br>Какая-то компания
-        <br><big>WEBSITE</big>
-        <br><a href="">Ссылка</a> 
+           <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nisi impedit voluptatum ipsum quae, nulla earum atque tempora corporis numquam.</h3><br>
+           <img src="image/case.png" alt="Произошла непредвиденная ошибка =(">
+           <div class="clear"></div>
+           <div class="client">
+        <h4><big>CLIENT:</big></h4>
+        <p>Какая-то компания</p>
+        <h4><big>WEBSITE:</big></h4>
+        <input type="submit" value="VISIT LIVE SITE">
+        </div>
+            <div class="client2"> 
+        <h4>Название проекта</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eligendi quae consectetur nobis accusantium aliquam iure dolorum est animi ipsam eveniet, autem voluptate iusto? Tempora laborum a, cupiditate corrupti nihil.</p>
+        </div>
+        <div class="clear"></div>
+        </div>
        </div>
-   </div>
    <div class="money">
       <h2>Расчет стоимости</h2>
+      <hr>
        <div class="calculate">
                    <h3>Тип сайта</h3>
         <select name="list1" id="list" placeholder="Выберите пункт...">
+        <option value="opt0">Выберите пункт...</option>
         <option value="opt1">Вэб-сайт</option>
         <option value="opt2">Сайт визитка</option>
         <option value="opt3">Онлайн магазин</option>
@@ -93,6 +115,7 @@
 <div class="calculate">
                    <h3>Дизаин</h3>
         <select name="list1" id="list" placeholder="Выберите пункт...">
+        <option value="opt0">Выберите пункт...</option>
         <option value="opt1">Вэб-сайт</option>
         <option value="opt2">Сайт визитка</option>
         <option value="opt3">Онлайн магазин</option>
@@ -102,83 +125,114 @@
           <div class="calculate">
                    <h3>Адаптивность</h3>
         <select name="list1" id="list" placeholder="Выберите пункт...">
+        <option value="opt0">Выберите пункт...</option>
         <option value="opt1">Вэб-сайт</option>
         <option value="opt2">Сайт визитка</option>
         <option value="opt3">Онлайн магазин</option>
         <option value="opt4">Учебный сайт</option>
     </select>
        </div> 
-           <h3>Стоимость</h3>
-           <p> <big>0</big></p>
-           <br><h3>Сроки</h3>
-            <p> <big>0</big></p>
-   <div class="state">
+           <div class="res">
+           Сроки</div>
+           <div class="res">
+           0</div>
+           <div class="clear"></div>
+           <div class="res">
+           Стоимость</div>
+           <div class="res">
+           0</div>
+        </div>
+   <div class="Fon2">
+     <br>
+      <div class="state">
        <h2>Немного статистики</h2>
-       <div class="mini_state">
-          <img src="..." alt=".">
+       <hr>
+       <div class="state_mini">
+         <div class="mini_state">
+          <img src="image/smail.png" alt=".">
            <h3>0</h3><p>Счастливых клиентов</p> 
        </div>
         <div class="mini_state">
-          <img src="..." alt=".">
+          <img src="image/skobki.png" alt=".">
            <h3>0</h3><p>Часов работы</p> 
        </div>
         <div class="mini_state">
-          <img src="..." alt=".">
+          <img src="image/galo4ka.png" alt=".">
            <h3>0</h3><p>Проэктов завершенно</p> 
        </div>
         <div class="mini_state">
-          <img src="..." alt="">
+          <img src="image/kybok.png" alt="">
            <h3>0</h3><p>Наград получено</p> 
        </div>
-        
+       </div>
    </div>
+   </div>
+   <div class="clear"></div>
    <div class="reviews">
        <h2>Отзывы</h2>
+       <hr>
        <div> 
-        <img src="" alt=".">
+        <img src="image/gen_director.png" alt=".">
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro totam placeat, assumenda officiis. Distinctio minus natus, aperiam voluptatum, non cupiditate saepe quaerat est temporibus quam debitis, dolore, esse adipisci sequi!</h4>
         <h3><b>Михаил</b>,Ген директор ПАО"Газпром"</h3>
         </div>
+        <div class="balls">
+            <img src="image/orange.png" alt="">
+            <img src="image/orange2.png" alt="">
+            <img src="image/orange2.png" alt="">
+        </div>
    </div>
    <div class="kontact">
+      <br>
        <h2>Мои контакты</h2>
-          <div class="info">
+         <hr>   
            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit.</h4>
-       </div>
-       <div class="info">
-           <img src="..." alt=".">
-<h4>Екатеринбург <br> Малышева 25</h4>
-              </div>
+       <div class="inf">
+          <div class="info">
+           <img src="image/geo.png" alt=".">
+<h4>Екатеринбург Малышева 25</h4>
+             </div>
               <div class="info">
-           <img src="..." alt=".">
+           <img src="image/sms.png" alt=".">
 <h4>tratata@mail.ru</h4>
               </div>
               <div class="info">
-           <img src="..." alt=".">
-<h4>+7 999 999-99-99</h4>
+           <img src="image/tel.png" alt=".">
+<h4>+7 904 168 02 95</h4>
               </div>
+              </div>
+              <div class="clear"></div>
 <div class="messeage">
     <h3>Оставьте мне сообщение</h3>
-<input type="text" name="text_imput" value="" placeholder="имя" > 
-<input type="text" name="text_imput" value="" placeholder="Email">
+<input  type="text" name="text_imput" value="" placeholder="Ваше имя" > 
+<input  type="text" name="text_imput" value="" placeholder="Email">
+ <br>
   <textarea name="messege" id="1" cols="100" rows="10" placeholder="Ваше сообщение"></textarea>
-  <input type="submit" value="Отправить">
+  <br>
 </div>
-</div>
-   <div class="social">
-       <a href=""><img src="" alt="."></a>
-       <a href=""><img src="" alt="."></a>
-       <a href=""><img src="" alt="."></a>
-       <a href=""><img src="" alt="."></a>
-       <a href=""><img src="" alt="."></a>
-          <a href=""><img src="" alt=""></a>
+       <div class="social1">
+       <div class="social"><a href=""><img src="image/fb.png" alt="."></a></div>
+       <div class="social"><a href=""><img src="image/twiter.png" alt="."></a></div>
+      <div class="social"><a href=""><img src="image/ma4.png" alt="."></a></div>
+       <div class="social"><a href=""><img src="image/kat.png" alt="."></a></div>
+       <div class="social"><a href=""><img src="image/inst.png" alt="."></a></div>
+        <div class="social"><a href=""><img src="image/in.png" alt=""></a></div>
+</div>   
    </div>
+
+ 
    <footer>
        <div class="maps">
            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.0440147234644!2d60.62312914463212!3d56.817782829807236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16ec0592cf3a3%3A0x77be4acf5980dd24!2z0J7QvtC-INCc0LXQs9Cw0LfQvdCw0Lo!5e0!3m2!1sru!2sru!4v1660912829731!5m2!1sru!2sru" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>
-       <h5>Copyright© 2022 Андрей Стасюк. Design by Web</h5>
    </footer>
+   <div class="bottom">
+             <br>
+             <br>
+             <br>
+             <br>
+              <h5>Copyright© 2022 Андрей Стасюк. Design by Web</h5>
+     </div>
     </body>
 
 
