@@ -4,7 +4,9 @@ body{
 nav{
     height: 60px;
     width: 100%;
-    background: #344051;    
+    background: #344051;   
+    position: fixed;
+    
 }
 .logo{
     color:#fff;
@@ -12,6 +14,10 @@ nav{
     line-height: 60px;
     padding-left: 20%;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+        
 }
 .menu{
     float: left;
@@ -25,11 +31,16 @@ nav{
     margin-right:40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
+
 
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height:100%;
     background:url(../image/boy.png) 90% 100%/auto 85% no-repeat  ,url(../image/bg.png) no-repeat center/cover;
   -webkit-box-shadow: 0px -20px 5px -5px rgba(0, 0, 0, 0.09) inset;
 -moz-box-shadow: 0px -20px 5px -5px rgba(0, 0, 0, 0.09) inset;
@@ -40,6 +51,14 @@ box-shadow: 0px -20px 5px -5px rgba(0, 0, 0, 0.09) inset;
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s; 
+    
     
 }
 .title__container h1 {
@@ -68,6 +87,9 @@ box-shadow: 0px -20px 5px -5px rgba(0, 0, 0, 0.09) inset;
 .Inf_container img{
 display: block;
 margin: 0px auto;
+    -webkit-animation: show 1s;
+    -o-animation: show 1s;
+    animation: show 1s; 
 }
 .Inf h2{
     font-size: 22px;
@@ -106,10 +128,10 @@ margin: 40px
 .skills {
     width:1100px;
     height: 520px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 .Fon{
-    background: url(../image/fon.png) no-repeat;
+    background: url(../image/fon.png)center/cover fixed no-repeat;
     width: 100%;
     height: 520px;
     margin-top: 97px;
@@ -132,7 +154,8 @@ margin: 40px
 .skills_item{
     float: left;
     width: 215px;
-    margin: 20px;
+    margin: 30px;
+    
 }
 .skills_item h3{
     color: #cf7600;
@@ -157,9 +180,22 @@ margin: 40px
 }
 .client {
     width:150px;
-    margin: 0px 120px 0px 360px;
+    margin: 0px 200px 0px 370px;
     float: left;
+    
     }
+.proect input{
+    transform: scale(1);
+    margin-left: -35px;
+}
+.proect input:hover{
+background: #db8755;
+    color: white;
+    
+}
+.proect input:active{
+    transform: scale(1.1);
+}
 .clear{
     clear: both;
 }
@@ -282,7 +318,7 @@ margin: 40px
     margin: 30px auto;
 }
 .Fon2{
-    background: url(../image/fon2.png) no-repeat;
+    background: url(../image/fon2.png) center/cover fixed no-repeat;
     width: 100%;
     height: 520px;
     margin-top: 97px;
@@ -408,6 +444,7 @@ margin: 15px auto;
 }
 .social1{
     margin-left: 720px;
+    
 }
 .bottom{
 background:  url(../image/bottom.png) no-repeat;
@@ -416,4 +453,115 @@ height: 96px;
     text-align: center;
     color: #fff;
     font-size: 10px;
+} 
+.menu li a{
+    transition: all 0.2s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:visited{
+    color: white;
+    
+}
+.menu li a:hover{
+    color: #e39f45;
+    }
+.menu li a:active{
+    transform: scale(1.1);
+
+}
+.main{
+    width: 100%;
+    height: 970px;  
+}
+.title__container input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.title__container input:hover{
+ background: #344b6b;
+    color: white;
+   
+}
+.title__container input:active{
+    transform: scale(1.1);
+}
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left:404px;
+    }
+}
+@keyframes show{
+    from{
+        margin-left: -1000px;
+    }
+    to{
+        margin-left: 36.5%;
+    }
+}
+.rez input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.rez input:hover{
+     color: coral;
+   
+}
+.rez input:active{
+    transform: scale(1.1);
+}
+.skills_item{
+    transform: scale(1, 1);
+}
+.skills_item:hover {
+  transform: scale(2, 2);
+    transition: all 0.6s;
+}
+.social{
+    transform: scale(1, 1);
+}
+.social:hover {
+  transform: scale(2, 2);
+    transition: all 0.6s;
 }
